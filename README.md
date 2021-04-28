@@ -1,4 +1,5 @@
 # Budget Tracker
+![image](https://github.com/polysnacktyl/budget/blob/main/public/icons/images/budget-demo.gif?raw=true)
 [check out the deployed application](https://sheltered-river-46144.herokuapp.com/)
 
 
@@ -17,12 +18,13 @@ To get this code up and running in VS Code:
 
 To install the live application on your device: 
 1. launch Google Chrome 
-2. navigate to the live application.
+2. direct the browser to https://sheltered-river-46144.herokuapp.com/
 3. click the download icon at the far right of the url bar
 4. click install app
 5. the app should automatically launch once the download is complete
 
     ##### note: for Mac users who have not changed relevant defaults, the file should save into user/Applications which stores Chrome-specific applications. This folder is one level deeper than the default for your computer's main Applications folder. They are, perhaps unwisely, both named "Applications." 
+
 ## Usage
 To track your budget: 
 1. enter your starting amount in `transaction amount` field with a description in the `transaction name` field. 
@@ -30,6 +32,10 @@ To track your budget:
 3. for each successive transaction, enter the amount and click +$$$ or -$$$, depending on whether the funds were being added to or subtracted from your budget. 
 
 ## Features 
+- MongoDB NoSQL database structure for dynamic collections and intuitive queries. 
+- Browser Cache and IndexDB for a user-experience so painless you may never even notice your internet connection dropped. 
+- In-browser and stand-alone application functionalities through Chrome. 
+- Automatic connection checks--no need to refresh. 
 
-## Credits
 ## Contributions
+For questions, comments, or contributions, please reach out via email to polysnacktyl@gmail.com. 
