@@ -1,17 +1,17 @@
 let db;
-let budgeVer;
+let budgetVersion;
 
-const request = indexedDB.open('budget', budgeVer || 3);
+const request = indexedDB.open('budget', budgetVersion || 3);
 
 request.onupgradeneeded = function (e) {
     console.log('Upgrade needed in IndexDB');
 
-    const { budgeFormer } = e;
-    const budgeFresh = e.budgeFresh || db.version;
+    const { oldVersion } = e;
+    const newVersion = e.newVersion || db.version;
 
-    console.log(`db version from ${budgeFormer} to ${budgeFresh} ✓`);
+    console.log(`db version from ${oldVersion} to ${newVersion} ✓`);
 
-    db = event.target.result;
+    db = e.target.result;
 
     if (db.objectStoreNames.length === 0) {
         db.createObjectStore('BudgetStore', { autoIncrement: true });
