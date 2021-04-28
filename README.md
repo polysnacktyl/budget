@@ -29,7 +29,7 @@ To install the live application on your device:
 To track your budget: 
 1. enter your starting amount in `transaction amount` field with a description in the `transaction name` field. 
 2. click  `+$$$`
-3. for each successive transaction, enter the amount and click +$$$ or -$$$, depending on whether the funds were being added to or subtracted from your budget. 
+3. for each successive transaction, enter the amount and click `+$$$` or `-$$$`, depending on whether the funds were being added to or subtracted from your budget. 
 
 ## Features 
 - MongoDB NoSQL database structure for dynamic collections and intuitive queries. 
