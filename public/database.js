@@ -3,7 +3,7 @@ let budgeVer;
 
 const request = indexedDB.open('budget', budgeVer || 3);
 
-request.onupgradeneeded = event => {
+request.onupgradeneeded = function (e) {
     console.log('Upgrade needed in IndexDB');
 
     const { budgeFormer } = e;
@@ -18,8 +18,8 @@ request.onupgradeneeded = event => {
     }
 };
 
-request.onerror = event => {
-    console.log(`oh dear. ${event.target.errorCode}`);
+request.onerror = function (e) {
+    console.log(`oh dear. ${e.target.errorCode}`);
 };
 
 function checkDatabase() {
